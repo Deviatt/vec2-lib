@@ -46,6 +46,6 @@ Checks if a point is within a circle
 
 int main(void) {
 	vec2_t vec0 = {70, 70};
-	printf("Within point in 100 radius degrees circle? %s %f\n", vec2_len(vec0) < 100 ? "false" : "true", vec2_len(vec0));
+	printf("Within point in 100 radius circle? %s %f\n", vec2_len(vec0) < 100 ? "false" : "true", vec2_len(vec0));
 }
 ```
