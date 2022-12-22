@@ -59,7 +59,7 @@ double vec2_len(vec2_t vec0) {
 }
 
 void vec2_norm(vec2_t *vec0) {
-	vec2_scale(*&vec0, 1 / vec2_len(*vec0));
+	vec2_scale(vec0, 1 / vec2_len(*vec0));
 }
 
 vec2_t vec2_nnorm(vec2_t vec0) {
