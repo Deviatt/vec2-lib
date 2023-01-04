@@ -59,11 +59,11 @@ double vec2_len(vec2_t vec0) {
 }
 
 void vec2_norm(vec2_t *vec0) {
-	vec2_scale(vec0, 1 / vec2_len(*vec0));
+	vec2_div(vec0, vec2_len(*vec0));
 }
 
 vec2_t vec2_nnorm(vec2_t vec0) {
-	return vec2_nscale(vec0, 1 / vec2_len(vec0));
+	return vec2_ndiv(vec0, vec2_len(vec0));
 }
 
 double vec2_distSqr(vec2_t vec0, vec2_t vec1) {
